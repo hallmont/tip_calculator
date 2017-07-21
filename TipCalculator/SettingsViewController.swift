@@ -11,6 +11,8 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var themeControl: UISegmentedControl!
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +26,8 @@ class SettingsViewController: UIViewController {
         super.viewWillAppear(animated)
         
         // Update tip percentage from UserDefaults
-        tipControl.selectedSegmentIndex = Helper.getTipControlIndexFromDefaults();
+        tipControl.selectedSegmentIndex = defaults.getTipPercentageIndex()
+        themeControl.selectedSegmentIndex = defaults.getThemeIndex()
     }
     
     @IBAction func tipControlValueChanged(_ sender: Any) {
@@ -33,13 +36,18 @@ class SettingsViewController: UIViewController {
     
     func updateDefaultTipPercentage() {
         
-        let defaults = UserDefaults.standard
-        
         // Store selected percentage value to UserDefaults
         let selectedPercentageValue = kTipPercentages[tipControl.selectedSegmentIndex]
+
+        defaults.setTipPercentage(tipPercent: selectedPercentageValue)
         
-        defaults.set( selectedPercentageValue, forKey: kTipPercentageKey )
+        defaults.synchronize()
+    }
+    
+    @IBAction func themeChanged(_ sender: Any) {
         
+        let selectedTheme = kThemes[ themeControl.selectedSegmentIndex ]
+        defaults.setTheme(name: selectedTheme)
         defaults.synchronize()
     }
 }

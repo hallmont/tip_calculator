@@ -7,14 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
 class Helper {
     
-    static func getTipControlIndexFromDefaults() -> Int {
+    static func getMinutesSinceLastAccess() -> Double
+    {
         let defaults = UserDefaults.standard
-        let value = defaults.double(forKey: kTipPercentageKey )
-        let index = kTipPercentages.index( of: value ) ?? 0
         
-        return index
+        let now = NSDate().timeIntervalSince1970
+        let elapsedMinutes = ( now - defaults.getAppBackgroundTime() ) / 60.0
+        
+        return elapsedMinutes
     }
+
 }

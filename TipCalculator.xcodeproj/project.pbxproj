@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		703B5AF61F1FCF6800215421 /* UserDefaults_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703B5AF51F1FCF6800215421 /* UserDefaults_Extension.swift */; };
+		703B5B161F21582700215421 /* pusheen.png in Resources */ = {isa = PBXBuildFile; fileRef = 703B5B151F21582700215421 /* pusheen.png */; };
 		7055A4991F1EBA5700C21745 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7055A4981F1EBA5700C21745 /* Helper.swift */; };
 		706103F51F1C155B00E22225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706103F41F1C155B00E22225 /* AppDelegate.swift */; };
 		706103F71F1C155B00E22225 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706103F61F1C155B00E22225 /* TipViewController.swift */; };
@@ -17,6 +19,8 @@
 		706104151F1C155B00E22225 /* TipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706104141F1C155B00E22225 /* TipCalculatorUITests.swift */; };
 		706104231F1C27E500E22225 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706104221F1C27E500E22225 /* SettingsViewController.swift */; };
 		706104251F1C5F9B00E22225 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706104241F1C5F9B00E22225 /* Constants.swift */; };
+		70DC1A411F21D69A00D6B1B0 /* Johnny_Bravo.png in Resources */ = {isa = PBXBuildFile; fileRef = 70DC1A401F21D69A00D6B1B0 /* Johnny_Bravo.png */; };
+		70DC1A431F21FCA800D6B1B0 /* UIColor_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC1A421F21FCA800D6B1B0 /* UIColor_Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		703B5AF51F1FCF6800215421 /* UserDefaults_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults_Extension.swift; sourceTree = "<group>"; };
+		703B5B151F21582700215421 /* pusheen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pusheen.png; sourceTree = "<group>"; };
 		7055A4981F1EBA5700C21745 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		706103F11F1C155B00E22225 /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		706103F41F1C155B00E22225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +59,8 @@
 		706104161F1C155B00E22225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		706104221F1C27E500E22225 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		706104241F1C5F9B00E22225 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		70DC1A401F21D69A00D6B1B0 /* Johnny_Bravo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Johnny_Bravo.png; sourceTree = "<group>"; };
+		70DC1A421F21FCA800D6B1B0 /* UIColor_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,8 @@
 				706104081F1C155B00E22225 /* TipCalculatorTests */,
 				706104131F1C155B00E22225 /* TipCalculatorUITests */,
 				706103F21F1C155B00E22225 /* Products */,
+				703B5B151F21582700215421 /* pusheen.png */,
+				70DC1A401F21D69A00D6B1B0 /* Johnny_Bravo.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +122,8 @@
 				706103FD1F1C155B00E22225 /* LaunchScreen.storyboard */,
 				706104001F1C155B00E22225 /* Info.plist */,
 				7055A4981F1EBA5700C21745 /* Helper.swift */,
+				703B5AF51F1FCF6800215421 /* UserDefaults_Extension.swift */,
+				70DC1A421F21FCA800D6B1B0 /* UIColor_Extension.swift */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";
@@ -202,6 +214,7 @@
 				TargetAttributes = {
 					706103F01F1C155B00E22225 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PLXAT8DYF4;
 						ProvisioningStyle = Automatic;
 					};
 					706104041F1C155B00E22225 = {
@@ -243,7 +256,9 @@
 			files = (
 				706103FF1F1C155B00E22225 /* LaunchScreen.storyboard in Resources */,
 				706103FC1F1C155B00E22225 /* Assets.xcassets in Resources */,
+				703B5B161F21582700215421 /* pusheen.png in Resources */,
 				706103FA1F1C155B00E22225 /* Main.storyboard in Resources */,
+				70DC1A411F21D69A00D6B1B0 /* Johnny_Bravo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +285,8 @@
 			files = (
 				706104251F1C5F9B00E22225 /* Constants.swift in Sources */,
 				706103F71F1C155B00E22225 /* TipViewController.swift in Sources */,
+				703B5AF61F1FCF6800215421 /* UserDefaults_Extension.swift in Sources */,
+				70DC1A431F21FCA800D6B1B0 /* UIColor_Extension.swift in Sources */,
 				7055A4991F1EBA5700C21745 /* Helper.swift in Sources */,
 				706103F51F1C155B00E22225 /* AppDelegate.swift in Sources */,
 				706104231F1C27E500E22225 /* SettingsViewController.swift in Sources */,
@@ -424,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PLXAT8DYF4;
 				INFOPLIST_FILE = TipCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.john.TipCalculator;
@@ -436,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PLXAT8DYF4;
 				INFOPLIST_FILE = TipCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.john.TipCalculator;
