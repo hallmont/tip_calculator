@@ -30,9 +30,22 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-## Notes
+## Project Analysis
 
-Describe any challenges encountered while building the app.
+As part of your pre-work submission, please reflect on the app and answer the following questions below:
+
+**Question 1**: "What are your reactions to the iOS app development platform so far? How would you describe outlets and actions to another developer? Bonus: any idea how they are being implemented under the hood? (It might give you some ideas if you right-click on the Storyboard and click Open As->Source Code")
+
+**Answer:**
+
+Outlets and actions are ways for the ViewController to interact with its Views.  Outlets allows the ViewController to change the view (e.g. change a label, etc.).  Actions allow the ViewController to get events from the View (e.g. get a user's click events, etc.).  From the XML source code, it looks like both outlets and actions are defined within the "connections" tag.
+
+Question 2: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
+
+**Answer:**
+
+A strong reference cycle can occur if the closure has a strong reference to the class which contains the closure.  This typically occurs if the closure "captures" self and maintains a strong reference to the container class. There are other examples, but this is the most common scenario.
+
 
 ## License
 
